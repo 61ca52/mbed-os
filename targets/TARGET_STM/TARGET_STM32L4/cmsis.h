@@ -19,6 +19,9 @@
 #define MBED_CMSIS_H
 
 #include "stm32l4xx.h"
+// ST aliases CAN to CAN1 in the L4 device headers
+// it collides with the CAN class
+#undef CAN
 #include "cmsis_nvic.h"
 
 #endif
